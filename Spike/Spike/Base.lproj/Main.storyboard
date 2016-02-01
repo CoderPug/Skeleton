@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Iniciar Sesión-->
@@ -442,8 +443,62 @@
                     <view key="view" contentMode="scaleToFill" id="jSE-EW-Y94">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example-user-photo" translatesAutoresizingMaskIntoConstraints="NO" id="Tjl-4M-f6A">
+                                <rect key="frame" x="250" y="87" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YBV-et-TeQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="fqu-iK-lNf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie1-MF-erg">
+                                <rect key="frame" x="50" y="214" width="97" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Academic Life"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIc-4x-j9c">
+                                <rect key="frame" x="50" y="264" width="97" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Employability"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8T-Nx-MBj">
+                                <rect key="frame" x="431" y="264" width="99" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Administration"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0P-Nd-PXI">
+                                <rect key="frame" x="431" y="214" width="99" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Globalization"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G40-KB-Gfz">
+                                <rect key="frame" x="50" y="314" width="97" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Profile"/>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tjl-4M-f6A" firstAttribute="centerX" secondItem="jSE-EW-Y94" secondAttribute="centerX" id="1Ff-Tk-Wp8"/>
+                            <constraint firstItem="G40-KB-Gfz" firstAttribute="top" secondItem="YIc-4x-j9c" secondAttribute="bottom" constant="20" id="1Gs-y4-7ix"/>
+                            <constraint firstItem="Tjl-4M-f6A" firstAttribute="top" secondItem="b5R-Mx-BLw" secondAttribute="bottom" constant="23" id="5aA-hH-ac5"/>
+                            <constraint firstItem="YIc-4x-j9c" firstAttribute="leading" secondItem="jSE-EW-Y94" secondAttribute="leading" constant="50" id="8tg-WA-aXG"/>
+                            <constraint firstItem="Ie1-MF-erg" firstAttribute="leading" secondItem="jSE-EW-Y94" secondAttribute="leading" constant="50" id="901-RV-P7t"/>
+                            <constraint firstItem="y8T-Nx-MBj" firstAttribute="top" secondItem="w0P-Nd-PXI" secondAttribute="bottom" constant="20" id="BB3-sS-C0n"/>
+                            <constraint firstItem="G40-KB-Gfz" firstAttribute="leading" secondItem="jSE-EW-Y94" secondAttribute="leading" constant="50" id="BZ5-gH-em9"/>
+                            <constraint firstItem="YIc-4x-j9c" firstAttribute="centerX" secondItem="Ie1-MF-erg" secondAttribute="centerX" id="HfR-WR-0JB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y8T-Nx-MBj" secondAttribute="trailing" constant="50" id="JsO-WI-jnM"/>
+                            <constraint firstItem="y8T-Nx-MBj" firstAttribute="centerX" secondItem="w0P-Nd-PXI" secondAttribute="centerX" id="PH2-97-zgr"/>
+                            <constraint firstItem="w0P-Nd-PXI" firstAttribute="centerY" secondItem="Ie1-MF-erg" secondAttribute="centerY" id="Rzd-5n-CoJ"/>
+                            <constraint firstItem="Ie1-MF-erg" firstAttribute="top" secondItem="b5R-Mx-BLw" secondAttribute="bottom" constant="150" id="UE4-77-8rx"/>
+                            <constraint firstItem="w0P-Nd-PXI" firstAttribute="top" secondItem="b5R-Mx-BLw" secondAttribute="bottom" constant="150" id="WVj-dv-OKO"/>
+                            <constraint firstItem="YIc-4x-j9c" firstAttribute="top" secondItem="Ie1-MF-erg" secondAttribute="bottom" constant="20" id="eNw-dN-6l6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w0P-Nd-PXI" secondAttribute="trailing" constant="50" id="mdc-W9-WpA"/>
+                            <constraint firstItem="G40-KB-Gfz" firstAttribute="centerX" secondItem="Ie1-MF-erg" secondAttribute="centerX" id="mmd-hE-VFt"/>
+                            <constraint firstItem="y8T-Nx-MBj" firstAttribute="centerY" secondItem="YIc-4x-j9c" secondAttribute="centerY" id="sXk-mt-G5U"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Cv-dm-gUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -453,5 +508,6 @@
     </scenes>
     <resources>
         <image name="example-qr" width="273" height="273"/>
+        <image name="example-user-photo" width="128" height="128"/>
     </resources>
 </document>
