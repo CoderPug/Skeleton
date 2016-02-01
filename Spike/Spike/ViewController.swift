@@ -9,17 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    private func loadWebAComponent(webPageURL: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let webViewA = storyboard.instantiateViewControllerWithIdentifier("webViewAController") as! WebViewAController
+        webViewA.stringURL = webPageURL
+        self.navigationController!.pushViewController(webViewA, animated: true)
+    }
+    
+    private func loadWebBComponent(webPageURL: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let webViewB = storyboard.instantiateViewControllerWithIdentifier("webViewBController") as! WebViewBController
+        webViewB.stringURL = webPageURL
+        self.navigationController!.pushViewController(webViewB, animated: true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func buttonGeneralInformationTouchUpInside(sender: AnyObject) {
+        self.loadWebAComponent("http://www.poli.edu.co/content/quienes-somos");
     }
-
-
+    
+    @IBAction func buttonMapTouchUpInside(sender: AnyObject) {
+        self.loadWebAComponent("http://www.poli.edu.co/sedes");
+    }
+    
+    @IBAction func buttonNewTouchUpInside(sender: AnyObject) {
+        self.loadWebBComponent("http://www.poli.edu.co/content/disponible-el-3er-y-ultimo-listado-de-becas-para-el-2015-ii");
+    }
 }
 
