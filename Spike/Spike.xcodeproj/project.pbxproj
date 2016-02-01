@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083F943E1C5FF10C00CD8096 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083F943D1C5FF10C00CD8096 /* SearchViewController.swift */; };
 		08476AD51C5FB15900444593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08476AD41C5FB15900444593 /* AppDelegate.swift */; };
 		08476AD71C5FB15900444593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08476AD61C5FB15900444593 /* ViewController.swift */; };
 		08476ADA1C5FB15900444593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08476AD81C5FB15900444593 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		083F943D1C5FF10C00CD8096 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		08476AD11C5FB15900444593 /* Spike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08476AD41C5FB15900444593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08476AD61C5FB15900444593 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				08476AD41C5FB15900444593 /* AppDelegate.swift */,
 				08476AD61C5FB15900444593 /* ViewController.swift */,
+				083F943D1C5FF10C00CD8096 /* SearchViewController.swift */,
 				08476AFC1C5FE1ED00444593 /* WebViewAController.swift */,
 				08476AFA1C5FE19900444593 /* WebViewBController.swift */,
 				08476AD81C5FB15900444593 /* Main.storyboard */,
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083F943E1C5FF10C00CD8096 /* SearchViewController.swift in Sources */,
 				08476AD71C5FB15900444593 /* ViewController.swift in Sources */,
 				08476AFB1C5FE19900444593 /* WebViewBController.swift in Sources */,
 				08476AD51C5FB15900444593 /* AppDelegate.swift in Sources */,
@@ -396,6 +400,7 @@
 				08476AF01C5FB15900444593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08476AF11C5FB15900444593 /* Build configuration list for PBXNativeTarget "SpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +409,7 @@
 				08476AF31C5FB15900444593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
