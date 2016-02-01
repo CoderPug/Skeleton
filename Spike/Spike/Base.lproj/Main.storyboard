@@ -137,26 +137,6 @@
             </objects>
             <point key="canvasLocation" x="722" y="1845"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="3I3-er-UhQ">
-            <objects>
-                <viewController id="P19-au-OKn" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZNF-68-7F7"/>
-                        <viewControllerLayoutGuide type="bottom" id="Yon-Jr-07s"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dw8-tY-Hpz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Wmd-To-IIF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zwY-ye-aMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-868" y="1774"/>
-        </scene>
         <!--Home-->
         <scene sceneID="Uxu-V4-30U">
             <objects>
@@ -456,21 +436,33 @@
                                 <rect key="frame" x="50" y="214" width="97" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Academic Life"/>
+                                <connections>
+                                    <segue destination="6mF-UO-xvJ" kind="show" id="fnz-I7-XRu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIc-4x-j9c">
                                 <rect key="frame" x="50" y="264" width="97" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Employability"/>
+                                <connections>
+                                    <segue destination="VYM-1q-sbg" kind="show" id="gwg-iW-iEf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8T-Nx-MBj">
                                 <rect key="frame" x="431" y="264" width="99" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Administration"/>
+                                <connections>
+                                    <segue destination="GeR-pI-cGx" kind="show" id="fu1-t9-aAu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0P-Nd-PXI">
                                 <rect key="frame" x="431" y="214" width="99" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Globalization"/>
+                                <connections>
+                                    <segue destination="5Gl-UU-zxK" kind="show" id="4US-G9-9QD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G40-KB-Gfz">
                                 <rect key="frame" x="50" y="314" width="97" height="30"/>
@@ -505,9 +497,300 @@
             </objects>
             <point key="canvasLocation" x="1786" y="298"/>
         </scene>
+        <!--Academic Life View Controller-->
+        <scene sceneID="SDs-r9-ldh">
+            <objects>
+                <viewController id="6mF-UO-xvJ" customClass="AcademicLifeViewController" customModule="Spike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nqR-Fw-vSc"/>
+                        <viewControllerLayoutGuide type="bottom" id="VgZ-NM-Vdb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e8T-tm-BTp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example-academic" translatesAutoresizingMaskIntoConstraints="NO" id="pkP-Q4-ZnG">
+                                <rect key="frame" x="250" y="89" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Xc9-Cd-Tan"/>
+                                    <constraint firstAttribute="width" constant="100" id="eJ6-Nu-c1J"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVb-pC-hXr">
+                                <rect key="frame" x="237" y="429" width="126" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Necesitas Ayuda ?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhv-cK-Xbd">
+                                <rect key="frame" x="243" y="184" width="114" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Detalle Progreso"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlW-Bc-UQR">
+                                <rect key="frame" x="224" y="219" width="152" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Mensajes del Profesor"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVU-th-s2f">
+                                <rect key="frame" x="226.5" y="254" width="147" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Próximas Actividades"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43M-Yn-2Ui">
+                                <rect key="frame" x="279.5" y="289" width="41" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Notas"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysy-F8-wB7">
+                                <rect key="frame" x="272" y="324" width="56" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Noticias"/>
+                                <connections>
+                                    <action selector="buttonNewsTouchUpInside:" destination="6mF-UO-xvJ" eventType="touchUpInside" id="hQs-rJ-7si"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jET-0G-bFq">
+                                <rect key="frame" x="272.5" y="359" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Eventos"/>
+                                <connections>
+                                    <action selector="buttonEventsTouchUpInside:" destination="6mF-UO-xvJ" eventType="touchUpInside" id="5om-KQ-QtA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnj-b5-H0Q">
+                                <rect key="frame" x="281.5" y="394" width="37" height="30"/>
+                                <animations/>
+                                <state key="normal" title="FAQs"/>
+                                <connections>
+                                    <action selector="buttonFAQsTouchUpInside:" destination="6mF-UO-xvJ" eventType="touchUpInside" id="ie5-cX-m2G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tnj-b5-H0Q" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="0gx-dU-Zv0"/>
+                            <constraint firstItem="43M-Yn-2Ui" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="4xO-aN-mmc"/>
+                            <constraint firstItem="YlW-Bc-UQR" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="5Rn-iL-qmS"/>
+                            <constraint firstItem="mhv-cK-Xbd" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="9GP-Sx-Ftl"/>
+                            <constraint firstItem="43M-Yn-2Ui" firstAttribute="top" secondItem="IVU-th-s2f" secondAttribute="bottom" constant="5" id="AQ5-GZ-GvN"/>
+                            <constraint firstItem="IVU-th-s2f" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="EcK-V4-X9R"/>
+                            <constraint firstItem="DVb-pC-hXr" firstAttribute="top" secondItem="Tnj-b5-H0Q" secondAttribute="bottom" constant="5" id="OVE-F9-aSf"/>
+                            <constraint firstItem="jET-0G-bFq" firstAttribute="top" secondItem="Ysy-F8-wB7" secondAttribute="bottom" constant="5" id="WQA-S3-iRI"/>
+                            <constraint firstItem="pkP-Q4-ZnG" firstAttribute="top" secondItem="nqR-Fw-vSc" secondAttribute="bottom" constant="25" id="aO4-2g-5g4"/>
+                            <constraint firstItem="YlW-Bc-UQR" firstAttribute="top" secondItem="mhv-cK-Xbd" secondAttribute="bottom" constant="5" id="ay6-1A-QIV"/>
+                            <constraint firstItem="DVb-pC-hXr" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="egI-1E-Sg5"/>
+                            <constraint firstItem="jET-0G-bFq" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="ffs-MP-Cct"/>
+                            <constraint firstItem="pkP-Q4-ZnG" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="m4l-XV-AGi"/>
+                            <constraint firstItem="Ysy-F8-wB7" firstAttribute="top" secondItem="43M-Yn-2Ui" secondAttribute="bottom" constant="5" id="mMW-HO-4Hd"/>
+                            <constraint firstItem="mhv-cK-Xbd" firstAttribute="top" secondItem="nqR-Fw-vSc" secondAttribute="bottom" constant="120" id="pRK-aH-WT6"/>
+                            <constraint firstItem="Ysy-F8-wB7" firstAttribute="centerX" secondItem="e8T-tm-BTp" secondAttribute="centerX" id="rLa-Yb-zMB"/>
+                            <constraint firstItem="IVU-th-s2f" firstAttribute="top" secondItem="YlW-Bc-UQR" secondAttribute="bottom" constant="5" id="y1x-XY-MGz"/>
+                            <constraint firstItem="Tnj-b5-H0Q" firstAttribute="top" secondItem="jET-0G-bFq" secondAttribute="bottom" constant="5" id="yfM-Fd-pSb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJV-R2-92L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2665" y="298"/>
+        </scene>
+        <!--Globalization View Controller-->
+        <scene sceneID="psK-zL-6BM">
+            <objects>
+                <viewController id="5Gl-UU-zxK" customClass="GlobalizationViewController" customModule="Spike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="273-Ly-Tvu"/>
+                        <viewControllerLayoutGuide type="bottom" id="H6u-hk-ysY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wJA-fY-5Kr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKJ-Fu-nQY">
+                                <rect key="frame" x="267" y="254" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Movilidad"/>
+                                <connections>
+                                    <action selector="buttonMovilityTouchUpInside:" destination="5Gl-UU-zxK" eventType="touchUpInside" id="khF-EX-3Pi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-0i-0iI">
+                                <rect key="frame" x="208.5" y="289" width="183" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Programas Internacionales"/>
+                                <connections>
+                                    <action selector="buttonInternationalProgramsTouchUpInside:" destination="5Gl-UU-zxK" eventType="touchUpInside" id="b04-vr-3qk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example-world" translatesAutoresizingMaskIntoConstraints="NO" id="1OP-u3-alh">
+                                <rect key="frame" x="260" y="89" width="80" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="aY2-me-jak"/>
+                                    <constraint firstAttribute="width" constant="80" id="ndU-20-WpY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me6-05-V4w">
+                                <rect key="frame" x="180" y="184" width="241" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Map (Oportunidades globalización)"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUQ-rb-UvO">
+                                <rect key="frame" x="251" y="219" width="98" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Mundo Ilumno"/>
+                                <connections>
+                                    <action selector="buttonIlumnoWorldTouchUpInside:" destination="5Gl-UU-zxK" eventType="touchUpInside" id="TLk-b4-5hQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IUQ-rb-UvO" firstAttribute="top" secondItem="Me6-05-V4w" secondAttribute="bottom" constant="5" id="68y-6f-WKf"/>
+                            <constraint firstItem="rk1-0i-0iI" firstAttribute="centerX" secondItem="wJA-fY-5Kr" secondAttribute="centerX" id="G1n-yr-XrS"/>
+                            <constraint firstItem="yKJ-Fu-nQY" firstAttribute="top" secondItem="IUQ-rb-UvO" secondAttribute="bottom" constant="5" id="Jz4-OC-e3s"/>
+                            <constraint firstItem="IUQ-rb-UvO" firstAttribute="centerX" secondItem="wJA-fY-5Kr" secondAttribute="centerX" id="KVr-71-4Bv"/>
+                            <constraint firstItem="1OP-u3-alh" firstAttribute="centerX" secondItem="wJA-fY-5Kr" secondAttribute="centerX" id="Usg-pV-qDq"/>
+                            <constraint firstItem="Me6-05-V4w" firstAttribute="top" secondItem="273-Ly-Tvu" secondAttribute="bottom" constant="120" id="ZQ4-mE-w0W"/>
+                            <constraint firstItem="yKJ-Fu-nQY" firstAttribute="centerX" secondItem="wJA-fY-5Kr" secondAttribute="centerX" id="cuP-36-fGX"/>
+                            <constraint firstItem="1OP-u3-alh" firstAttribute="top" secondItem="273-Ly-Tvu" secondAttribute="bottom" constant="25" id="dfP-Oq-Two"/>
+                            <constraint firstItem="rk1-0i-0iI" firstAttribute="top" secondItem="yKJ-Fu-nQY" secondAttribute="bottom" constant="5" id="mtz-zb-oGg"/>
+                            <constraint firstItem="Me6-05-V4w" firstAttribute="centerX" secondItem="wJA-fY-5Kr" secondAttribute="centerX" id="qsv-I8-DvB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hY6-3B-H2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2541" y="1080"/>
+        </scene>
+        <!--Globalization View Controller-->
+        <scene sceneID="fKs-MJ-68L">
+            <objects>
+                <viewController id="VYM-1q-sbg" customClass="GlobalizationViewController" customModule="Spike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x6Z-5p-Za6"/>
+                        <viewControllerLayoutGuide type="bottom" id="eiY-bp-igT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ss-Wz-5Qp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example-suitcase" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-Of-3mC">
+                                <rect key="frame" x="260" y="89" width="80" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="IDt-3Q-DOV"/>
+                                    <constraint firstAttribute="width" constant="80" id="bOq-O2-9ct"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtu-Al-58o">
+                                <rect key="frame" x="50" y="214" width="48.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Dónde?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9am-Ak-ju0">
+                                <rect key="frame" x="50" y="239.5" width="67.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9am-Ak-ju0" firstAttribute="top" secondItem="Mtu-Al-58o" secondAttribute="bottom" constant="5" id="3Vb-4l-6eO"/>
+                            <constraint firstItem="9am-Ak-ju0" firstAttribute="leading" secondItem="9ss-Wz-5Qp" secondAttribute="leadingMargin" constant="50" id="8Vl-L3-Zbl"/>
+                            <constraint firstItem="Dgc-Of-3mC" firstAttribute="top" secondItem="x6Z-5p-Za6" secondAttribute="bottom" constant="25" id="FWW-Ud-Aab"/>
+                            <constraint firstItem="Mtu-Al-58o" firstAttribute="leading" secondItem="9ss-Wz-5Qp" secondAttribute="leading" constant="50" id="GFB-IM-YN2"/>
+                            <constraint firstItem="Mtu-Al-58o" firstAttribute="leading" secondItem="9ss-Wz-5Qp" secondAttribute="leadingMargin" constant="50" id="d0g-6k-Ohu"/>
+                            <constraint firstItem="Mtu-Al-58o" firstAttribute="top" secondItem="x6Z-5p-Za6" secondAttribute="bottom" constant="150" id="v1t-uK-qkj"/>
+                            <constraint firstItem="9am-Ak-ju0" firstAttribute="leading" secondItem="9ss-Wz-5Qp" secondAttribute="leading" constant="50" id="vdg-jS-qC6"/>
+                            <constraint firstItem="Dgc-Of-3mC" firstAttribute="centerX" secondItem="9ss-Wz-5Qp" secondAttribute="centerX" id="wcG-3q-sYD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="d0g-6k-Ohu"/>
+                                <exclude reference="8Vl-L3-Zbl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDO-gW-5MK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="1080"/>
+        </scene>
+        <!--Administration View Controller-->
+        <scene sceneID="0Vb-cL-eP5">
+            <objects>
+                <viewController id="GeR-pI-cGx" customClass="AdministrationViewController" customModule="Spike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xjc-kN-DXf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kgb-mv-Pq6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TeD-Zi-5Bi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1v-Je-iaG">
+                                <rect key="frame" x="258" y="254" width="84" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Certificados"/>
+                                <connections>
+                                    <action selector="buttonCertificatesTouchUpInside:" destination="GeR-pI-cGx" eventType="touchUpInside" id="aaq-dW-48r"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example-paper" translatesAutoresizingMaskIntoConstraints="NO" id="7ec-ci-3gn">
+                                <rect key="frame" x="260" y="89" width="80" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Phe-YJ-RrA"/>
+                                    <constraint firstAttribute="height" constant="80" id="ulo-Kv-K9W"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fx-zV-E9i">
+                                <rect key="frame" x="239.5" y="184" width="122" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Estado de Cuenta"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHl-qZ-M1y">
+                                <rect key="frame" x="254.5" y="219" width="91" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Inscripciones"/>
+                                <connections>
+                                    <action selector="buttonInscriptionsTouchUpInside:" destination="GeR-pI-cGx" eventType="touchUpInside" id="OsO-st-fc4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y1v-Je-iaG" firstAttribute="centerX" secondItem="TeD-Zi-5Bi" secondAttribute="centerX" id="087-0v-fD9"/>
+                            <constraint firstItem="gHl-qZ-M1y" firstAttribute="top" secondItem="4fx-zV-E9i" secondAttribute="bottom" constant="5" id="44D-gq-zvm"/>
+                            <constraint firstItem="y1v-Je-iaG" firstAttribute="top" secondItem="gHl-qZ-M1y" secondAttribute="bottom" constant="5" id="Cdp-Fx-S2F"/>
+                            <constraint firstItem="4fx-zV-E9i" firstAttribute="centerX" secondItem="TeD-Zi-5Bi" secondAttribute="centerX" id="IgR-u0-vwK"/>
+                            <constraint firstItem="7ec-ci-3gn" firstAttribute="top" secondItem="xjc-kN-DXf" secondAttribute="bottom" constant="25" id="OHw-X9-k4g"/>
+                            <constraint firstItem="4fx-zV-E9i" firstAttribute="top" secondItem="xjc-kN-DXf" secondAttribute="bottom" constant="120" id="UqM-IH-vNH"/>
+                            <constraint firstItem="7ec-ci-3gn" firstAttribute="centerX" secondItem="TeD-Zi-5Bi" secondAttribute="centerX" id="dYD-5Z-FRi"/>
+                            <constraint firstItem="gHl-qZ-M1y" firstAttribute="centerX" secondItem="TeD-Zi-5Bi" secondAttribute="centerX" id="prX-Kl-5gd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wk-nq-hL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="1820"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="example-academic" width="128" height="128"/>
+        <image name="example-paper" width="128" height="128"/>
         <image name="example-qr" width="273" height="273"/>
+        <image name="example-suitcase" width="128" height="128"/>
         <image name="example-user-photo" width="128" height="128"/>
+        <image name="example-world" width="128" height="128"/>
     </resources>
 </document>
