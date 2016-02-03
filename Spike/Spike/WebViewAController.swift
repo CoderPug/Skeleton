@@ -11,6 +11,7 @@ import UIKit
 class WebViewAController: UIViewController {
     
     var stringURL : String!
+    
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
@@ -20,8 +21,19 @@ class WebViewAController: UIViewController {
         webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, -50, 0)
         
         let url = NSURL (string: stringURL)
-        let requestObj = NSURLRequest(URL: url!)
+        let requestObj = NSURLRequest(URL: url!, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval:15.0)
         webView.loadRequest(requestObj)
     }
-
+    
+    @IBAction func buttonRefreshTouchUpInside(sender: AnyObject) {
+        webView.reload()
+    }
+    
+    @IBAction func buttonBackTouchUpInside(sender: AnyObject) {
+        webView.goBack()
+    }
+    
+    @IBAction func buttonForwardTouchUpInside(sender: AnyObject) {
+        webView.goForward()
+    }
 }

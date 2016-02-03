@@ -21,7 +21,7 @@ class WebViewBController: UIViewController {
         webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, -50, 0)
         
         let url = NSURL (string: stringURL)
-        let requestObj = NSURLRequest(URL: url!)
+        let requestObj = NSURLRequest(URL: url!, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval:15.0)
         webView.loadRequest(requestObj)
     }
 
