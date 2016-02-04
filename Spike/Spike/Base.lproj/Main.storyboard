@@ -346,6 +346,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="0.0" colorSpace="deviceRGB"/>
                             </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C5e-m0-WlA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -362,12 +365,15 @@
                             <constraint firstItem="YuD-yL-R6Y" firstAttribute="top" secondItem="ncR-eH-3Vy" secondAttribute="bottom" id="J5I-PK-ox5"/>
                             <constraint firstAttribute="trailing" secondItem="ncR-eH-3Vy" secondAttribute="trailing" id="Jk5-Fc-Bmi"/>
                             <constraint firstItem="YuD-yL-R6Y" firstAttribute="top" secondItem="ncR-eH-3Vy" secondAttribute="bottom" id="KLL-Kw-l27"/>
+                            <constraint firstItem="C5e-m0-WlA" firstAttribute="top" secondItem="AW6-Sr-qh4" secondAttribute="top" id="PVA-CU-i8X"/>
                             <constraint firstItem="ncR-eH-3Vy" firstAttribute="top" secondItem="AW6-Sr-qh4" secondAttribute="top" id="WNV-oF-bBm"/>
                             <constraint firstItem="ncR-eH-3Vy" firstAttribute="leading" secondItem="AW6-Sr-qh4" secondAttribute="leading" id="ZI7-jM-E3M"/>
                             <constraint firstItem="ncR-eH-3Vy" firstAttribute="top" secondItem="voA-jP-jm5" secondAttribute="bottom" id="ZTZ-1r-8KN"/>
                             <constraint firstItem="ncR-eH-3Vy" firstAttribute="top" secondItem="AW6-Sr-qh4" secondAttribute="top" id="Zg0-1I-B1N"/>
                             <constraint firstItem="ncR-eH-3Vy" firstAttribute="leading" secondItem="AW6-Sr-qh4" secondAttribute="leading" id="aZ3-Ox-IY0"/>
+                            <constraint firstAttribute="trailing" secondItem="C5e-m0-WlA" secondAttribute="trailing" id="apq-u3-rUa"/>
                             <constraint firstAttribute="trailing" secondItem="ncR-eH-3Vy" secondAttribute="trailing" id="eRZ-g2-mMq"/>
+                            <constraint firstItem="C5e-m0-WlA" firstAttribute="leading" secondItem="AW6-Sr-qh4" secondAttribute="leading" id="fki-s0-hLe"/>
                             <constraint firstItem="YuD-yL-R6Y" firstAttribute="top" secondItem="ncR-eH-3Vy" secondAttribute="bottom" id="hQD-0M-etc"/>
                             <constraint firstAttribute="trailing" secondItem="ncR-eH-3Vy" secondAttribute="trailing" id="kxJ-xc-bR2"/>
                             <constraint firstAttribute="trailing" secondItem="ncR-eH-3Vy" secondAttribute="trailing" id="mZv-eA-KIh"/>
@@ -660,7 +666,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Dónde?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9am-Ak-ju0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Dónde?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9am-Ak-ju0">
                                 <rect key="frame" x="50" y="240" width="68" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
