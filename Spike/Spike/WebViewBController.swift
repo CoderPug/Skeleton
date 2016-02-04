@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WebViewBController: UIViewController {
+class WebViewBController: UIViewController, UIWebViewDelegate {
     
     var stringURL : String!
     
@@ -19,10 +19,21 @@ class WebViewBController: UIViewController {
         //        self.tabBarController?.tabBar.hidden = true
         webView.opaque = false
         webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, -50, 0)
-        
+        webView.scrollView.bounces = false
+        webView.delegate = self
         let url = NSURL (string: stringURL)
         let requestObj = NSURLRequest(URL: url!, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval:15.0)
         webView.loadRequest(requestObj)
+    }
+    
+    // MARK: - UIWebView delegate
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
 
 }

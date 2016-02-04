@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WebViewAController: UIViewController {
+class WebViewAController: UIViewController, UIWebViewDelegate {
     
     var stringURL : String!
     
@@ -19,7 +19,8 @@ class WebViewAController: UIViewController {
         //        self.tabBarController?.tabBar.hidden = true
         webView.opaque = false
         webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, -50, 0)
-        
+        webView.scrollView.bounces = false
+        webView.delegate = self
         let url = NSURL (string: stringURL)
         let requestObj = NSURLRequest(URL: url!, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval:15.0)
         webView.loadRequest(requestObj)
@@ -36,4 +37,15 @@ class WebViewAController: UIViewController {
     @IBAction func buttonForwardTouchUpInside(sender: AnyObject) {
         webView.goForward()
     }
+    
+    // MARK: - UIWebView delegate
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    }
+    
 }

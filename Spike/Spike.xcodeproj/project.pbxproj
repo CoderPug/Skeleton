@@ -19,6 +19,8 @@
 		08476AEA1C5FB15900444593 /* SpikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08476AE91C5FB15900444593 /* SpikeTests.swift */; };
 		08476AFB1C5FE19900444593 /* WebViewBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08476AFA1C5FE19900444593 /* WebViewBController.swift */; };
 		08476AFD1C5FE1ED00444593 /* WebViewAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08476AFC1C5FE1ED00444593 /* WebViewAController.swift */; };
+		08631CBC1C638C900026A757 /* IlumnoURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08631CBB1C638C900026A757 /* IlumnoURLProtocol.swift */; };
+		08631CBF1C63A76D0026A757 /* IlumnoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08631CBD1C63A76D0026A757 /* IlumnoModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		08476AEB1C5FB15900444593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08476AFA1C5FE19900444593 /* WebViewBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewBController.swift; sourceTree = "<group>"; };
 		08476AFC1C5FE1ED00444593 /* WebViewAController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAController.swift; sourceTree = "<group>"; };
+		08631CBB1C638C900026A757 /* IlumnoURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IlumnoURLProtocol.swift; sourceTree = "<group>"; };
+		08631CBE1C63A76D0026A757 /* IlumnoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IlumnoModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				08476AD41C5FB15900444593 /* AppDelegate.swift */,
+				08631CBB1C638C900026A757 /* IlumnoURLProtocol.swift */,
 				08476AD61C5FB15900444593 /* ViewController.swift */,
 				083F943F1C5FFC1200CD8096 /* AcademicLifeViewController.swift */,
 				083F94411C5FFE4000CD8096 /* GlobalizationViewController.swift */,
@@ -100,6 +105,7 @@
 				08476AD81C5FB15900444593 /* Main.storyboard */,
 				08476ADB1C5FB15900444593 /* Assets.xcassets */,
 				08476ADD1C5FB15900444593 /* LaunchScreen.storyboard */,
+				08631CBD1C63A76D0026A757 /* IlumnoModel.xcdatamodeld */,
 				08476AE01C5FB15900444593 /* Info.plist */,
 			);
 			path = Spike;
@@ -217,8 +223,10 @@
 			files = (
 				083F943E1C5FF10C00CD8096 /* SearchViewController.swift in Sources */,
 				08476AD71C5FB15900444593 /* ViewController.swift in Sources */,
+				08631CBC1C638C900026A757 /* IlumnoURLProtocol.swift in Sources */,
 				083F94441C60011200CD8096 /* AdministrationViewController.swift in Sources */,
 				083F94421C5FFE4000CD8096 /* GlobalizationViewController.swift in Sources */,
+				08631CBF1C63A76D0026A757 /* IlumnoModel.xcdatamodeld in Sources */,
 				083F94401C5FFC1200CD8096 /* AcademicLifeViewController.swift in Sources */,
 				08476AFB1C5FE19900444593 /* WebViewBController.swift in Sources */,
 				08476AD51C5FB15900444593 /* AppDelegate.swift in Sources */,
@@ -424,6 +432,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08631CBD1C63A76D0026A757 /* IlumnoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08631CBE1C63A76D0026A757 /* IlumnoModel.xcdatamodel */,
+			);
+			currentVersion = 08631CBE1C63A76D0026A757 /* IlumnoModel.xcdatamodel */;
+			name = IlumnoModel.xcdatamodeld;
+			path = ../IlumnoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 08476AC91C5FB15900444593 /* Project object */;
 }
