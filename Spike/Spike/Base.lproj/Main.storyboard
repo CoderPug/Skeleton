@@ -109,8 +109,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmG-Dn-5U3">
-                                <rect key="frame" x="276.5" y="285" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmG-Dn-5U3">
+                                <rect key="frame" x="277" y="285" width="48" height="30"/>
                                 <state key="normal" title="Buscar"/>
                                 <connections>
                                     <action selector="buttonGeneralInformationTouchUpInside:" destination="FXa-g1-fC5" eventType="touchUpInside" id="7PV-aJ-sr6"/>
@@ -159,15 +159,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kf-3i-vgw">
-                                <rect key="frame" x="214.5" y="144" width="172" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kf-3i-vgw">
+                                <rect key="frame" x="215" y="144" width="172" height="30"/>
                                 <state key="normal" title="Mapa de sedes y centros"/>
                                 <connections>
                                     <action selector="buttonMapTouchUpInside:" destination="cXs-NJ-kod" eventType="touchUpInside" id="oO7-X8-OCo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDX-pQ-2ca">
-                                <rect key="frame" x="251.5" y="209" width="98" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDX-pQ-2ca">
+                                <rect key="frame" x="252" y="209" width="98" height="30"/>
                                 <state key="normal" title="Detalle noticia"/>
                                 <connections>
                                     <action selector="buttonNewTouchUpInside:" destination="cXs-NJ-kod" eventType="touchUpInside" id="x2r-yd-wVg"/>
@@ -515,11 +515,11 @@
                                 <state key="normal" title="Mensajes del Profesor"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVU-th-s2f">
-                                <rect key="frame" x="226.5" y="254" width="147" height="30"/>
+                                <rect key="frame" x="227" y="254" width="147" height="30"/>
                                 <state key="normal" title="Próximas Actividades"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43M-Yn-2Ui">
-                                <rect key="frame" x="279.5" y="289" width="41" height="30"/>
+                                <rect key="frame" x="280" y="289" width="41" height="30"/>
                                 <state key="normal" title="Notas"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysy-F8-wB7">
@@ -530,14 +530,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jET-0G-bFq">
-                                <rect key="frame" x="272.5" y="359" width="55" height="30"/>
+                                <rect key="frame" x="273" y="359" width="55" height="30"/>
                                 <state key="normal" title="Eventos"/>
                                 <connections>
                                     <action selector="buttonEventsTouchUpInside:" destination="6mF-UO-xvJ" eventType="touchUpInside" id="5om-KQ-QtA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnj-b5-H0Q">
-                                <rect key="frame" x="281.5" y="394" width="37" height="30"/>
+                                <rect key="frame" x="282" y="394" width="37" height="30"/>
                                 <state key="normal" title="FAQs"/>
                                 <connections>
                                     <action selector="buttonFAQsTouchUpInside:" destination="6mF-UO-xvJ" eventType="touchUpInside" id="ie5-cX-m2G"/>
@@ -591,7 +591,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-0i-0iI">
-                                <rect key="frame" x="208.5" y="289" width="183" height="30"/>
+                                <rect key="frame" x="209" y="289" width="183" height="30"/>
                                 <state key="normal" title="Programas Internacionales"/>
                                 <connections>
                                     <action selector="buttonInternationalProgramsTouchUpInside:" destination="5Gl-UU-zxK" eventType="touchUpInside" id="b04-vr-3qk"/>
@@ -655,13 +655,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtu-Al-58o">
-                                <rect key="frame" x="50" y="214" width="48.5" height="20.5"/>
+                                <rect key="frame" x="50" y="214" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Dónde?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9am-Ak-ju0">
-                                <rect key="frame" x="50" y="239.5" width="67.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Dónde?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9am-Ak-ju0">
+                                <rect key="frame" x="50" y="240" width="68" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -716,12 +716,12 @@
                                     <constraint firstAttribute="height" constant="80" id="ulo-Kv-K9W"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fx-zV-E9i">
-                                <rect key="frame" x="239.5" y="184" width="122" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fx-zV-E9i">
+                                <rect key="frame" x="240" y="184" width="122" height="30"/>
                                 <state key="normal" title="Estado de Cuenta"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHl-qZ-M1y">
-                                <rect key="frame" x="254.5" y="219" width="91" height="30"/>
+                                <rect key="frame" x="255" y="219" width="91" height="30"/>
                                 <state key="normal" title="Inscripciones"/>
                                 <connections>
                                     <action selector="buttonInscriptionsTouchUpInside:" destination="GeR-pI-cGx" eventType="touchUpInside" id="OsO-st-fc4"/>
