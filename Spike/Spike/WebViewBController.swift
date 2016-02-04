@@ -11,8 +11,11 @@ import UIKit
 class WebViewBController: UIViewController, UIWebViewDelegate {
     
     var stringURL : String!
+    var theBool: Bool = false
+    var myTimer: NSTimer = NSTimer()
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var progressView: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +29,44 @@ class WebViewBController: UIViewController, UIWebViewDelegate {
         webView.loadRequest(requestObj)
     }
     
+    // MARK: - ProgressView logic
+    
+    func funcToCallWhenStartLoadingYourWebview() {
+        progressView.progress = 0.0
+        theBool = false
+        myTimer = NSTimer.scheduledTimerWithTimeInterval(0.01667, target: self, selector: "timerCallback", userInfo: nil, repeats: true)
+    }
+    
+    func funcToCallCalledWhenUIWebViewFinishesLoading() {
+        theBool = true
+    }
+    
+    func timerCallback() {
+        if theBool {
+            if progressView.progress >= 1 {
+                progressView.hidden = true
+                myTimer.invalidate()
+            } else {
+                progressView.progress += 0.1
+            }
+        } else {
+            progressView.progress += 0.05
+            if progressView.progress >= 0.95 {
+                progressView.progress = 0.95
+            }
+        }
+    }
+    
     // MARK: - UIWebView delegate
     
     func webViewDidStartLoad(webView: UIWebView) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        self.funcToCallWhenStartLoadingYourWebview()
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        self.funcToCallCalledWhenUIWebViewFinishesLoading()
     }
 
 }
